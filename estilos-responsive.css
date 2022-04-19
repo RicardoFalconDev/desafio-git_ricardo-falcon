@@ -52,12 +52,13 @@ a:hover {
     }
 
     h1 {
-        font-size: 3rem;
-        text-shadow: 2px 2px 5px white
+        text-shadow: 1px 1px 5px var(--primario);
+        color: white;
     }
 
     header h2 {
-        text-shadow: 2px 2px 5px white
+        text-shadow: 1px 1px 5px var(--primario);
+        color: white;
     }
 
     a {
@@ -406,15 +407,29 @@ a:hover {
         flex-flow: row wrap;
         justify-content: center;
         align-content: center;
-        background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?q=60&c=sc&poi=face&w=2000&h=1000&url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F9%2F2020%2F06%2F09%2FClassic-Chocolate-Chip-Cookies-FT-RECIPE0520-2000.jpg);
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("resources/img/img-portada.jpg");
         background-repeat: no-repeat;
         background-size: cover;
+        height: 90vh;
 
     }
 
-    header h1, h2 {
-        color: var(--secundario);
 
+
+    header h1{
+        text-shadow: 1px 1px 5px var(--primario);
+        color: white;
+        margin-bottom: 60px;
+    }
+    
+    header h2 {
+        text-shadow: 1px 1px 5px var(--primario);
+        color: white;
     }
 
     /* footer*/
@@ -995,7 +1010,12 @@ a:hover {
         background-repeat: no-repeat;
         background-size: cover;
         text-align: center;
-        background-image: url(resources/img/img-portada.jpg);
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("resources/img/img-portada.jpg");
         height: 80vh;
 
     }
@@ -1591,7 +1611,12 @@ a:hover {
         background-repeat: no-repeat;
         background-size: cover;
         text-align: center;
-        background-image: url(resources/img/img-portada.jpg);
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("resources/img/img-portada.jpg");
         height: 90vh;
 
     }
